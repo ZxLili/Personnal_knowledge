@@ -32,11 +32,13 @@ jobs:
       MDBOOK_VERSION: 0.4.47
     steps:
       - uses: actions/checkout@v4
+      - name: Install cargo-binstall
+        uses: cargo-bins/cargo-binstall@main
       - name: Install mdBook
         run: |
           cargo install --version ${MDBOOK_VERSION} mdbook
           ## https://github.com/badboy/mdbook-mermaid
-          cargo install --version 0.17.1 mdbook-mermaid
+          cargo binstall --version 0.17.1 mdbook-mermaid
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
