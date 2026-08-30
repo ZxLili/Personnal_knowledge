@@ -7,7 +7,6 @@ language = "fr"
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-
 # plugin admonish faire mdbook-admonish install /DocFlow
 additional-css = ["./mdbook-admonish.css"]
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
@@ -24,9 +23,6 @@ depth = 3
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
-# pour les carré colorer
-[preprocessor.admonish]
-after = ["links"]
-command = "mdbook-admonish"
-assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
-marker = ":::"
+
+
+
