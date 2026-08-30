@@ -39,6 +39,7 @@ jobs:
           cargo binstall --no-confirm mdbook
           ## https://github.com/badboy/mdbook-mermaid
           cargo binstall --no-confirm mdbook-mermaid
+          cargo binstall --no-confirm mdbook-toc
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
