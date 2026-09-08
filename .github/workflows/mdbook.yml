@@ -36,17 +36,18 @@ jobs:
         uses: cargo-bins/cargo-binstall@main
       - name: Install mdBook
         run: |
-          cargo binstall --no-confirm mdbook
+          mkdir bin
+          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.5.4/mdbook-v0.5.4-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
           ## https://github.com/badboy/mdbook-mermaid
-          cargo binstall --no-confirm mdbook-mermaid
-          cargo binstall --no-confirm mdbook-toc
+          # cargo binstall --no-confirm mdbook-mermaid
+          # cargo binstall --no-confirm mdbook-toc
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
         run: |
-          mdbook-mermaid install . 
-          mdbook build
+          # mdbook-mermaid install . 
+          bin/mdbook build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
