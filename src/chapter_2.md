@@ -51,7 +51,7 @@ A bare url: <https://www.rust-lang.org>.
 
 ---
 
-{{#include ./README.md}}
+{{#include ./introPages.md}}
 
 {{#playground}}  
 $$\frac{1}{3}$$

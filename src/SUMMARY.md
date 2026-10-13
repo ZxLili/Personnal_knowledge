@@ -2,11 +2,10 @@
 
 [Presentation](./presentation.md)
 
-[IntroductionPage](./README.md)
+- [IntroductionPage](./introPage.md)
 
 - [Chapter 1](./chapter_1.md)
 - [Chapter 2](./chapter_2.md)
-<!-- - [Introduction](../README.md) -->
 
 ---
 
@@ -21,6 +20,7 @@
 # Connaissance Master
 
 <!-- - [Introdution](./master/README_MASTER.md) -->
+
 - [FPGA](./master/FPGA.md)
 - [Ada](./verif/Ada.md)
 - [RUST](./verif/Rust.md)
