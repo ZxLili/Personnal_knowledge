@@ -1,14 +1,31 @@
 [book]
 title = "PersonalTest"
 authors = ["ZxLili"]
-language = "en"
+language = "fr"
 src = "src"
+description = "Un debarat qui a peu de sens pour les autres, si vous le voyez ne m'en parler pas svp"
+
+[build]
+create-missing = true
 
 [output.html]
 default-theme = "light"
 preferred-dark-theme = "navy"
-additional-css = ["mdbook-admonish.css", "./mdbook-admonish.css"]
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
+mathjax-support = true
+smart-punctuation = true
+definition-lists = true
+admonitions = true
+no-section-label = false
+git-repository-url = "https://github.com/ZxLili/Personnal_knowledge"
+git-repository-icon = "fab-github"
+site-url = "https://zxlili.github.io/Personnal_knowledge/"
+edit-url-template = "https://github.com/ZxLili/Personnal_knowledge/edit/main/{path}"
+
+[output.html.fold]
+enable = true    # whether or not to enable section folding
+level = 1         # the depth to start folding
+
 
 [preprocessor.toc]
 command = "mdbook-toc"
@@ -18,4 +35,6 @@ depth = 3
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
+
+
 
